@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Like Ratio",
+  "version": "1.0",
+
+  "description": "Displays the like ratio in YouTube videos",
+
+  "icons": {
+    "48": "icon/thumbs_up_down.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["like-ratio.js"]
+    }
+  ]
+
+}
